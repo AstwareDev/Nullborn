@@ -17,7 +17,7 @@ local function createLabel(parent, text, position)
 	return label
 end
 
-function CombatTracker.new(character, enemyFinder)
+function CombatTracker:new(character, enemyFinder)
 	local self = setmetatable({}, { __index = CombatTracker })
 
 	self.Character = character
